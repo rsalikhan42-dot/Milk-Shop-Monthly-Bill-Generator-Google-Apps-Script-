@@ -54,6 +54,15 @@ Is script ko chalaane ke liye Google Sheets aur Google Drive zaroori hain.
 
 ```javascript
 // ===> APNI DRIVE FOLDER ID YAHAN DAALEIN <===
-var BILLS_FOLDER_ID = 'YOUR_FOLDER_ID_HERE'; // ID ko single quotes ('') mein daalein.
+var BILLS_FOLDER_ID = 'YOUR_FOLDER_ID_HERE'; // ID ko single quotes ('') mein daalein.### Step 3: Menu aur Trigger Setup
+
+Code paste karne aur Folder ID theek karne ke baad, yeh aakhri steps hain:
+
+1.  **Menu Load Karein:** Apps Script Editor mein function dropdown se **`onOpen()`** function select karein aur **Run** ($\blacktriangleright$) button dabaayein. (Pehli baar **Authorization** maang sakta hai, jise **Allow** karna lazmi hai).
+2.  **Manual Run (Testing):** Apni Google Sheet mein waapas jaakar **🥛 Milk Shop** menu se **📅 Generate Monthly Bills** par click karke test karein aur check karein ke Drive mein PDF save ho raha hai.
+3.  **Automatic Trigger Setup:** Apps Script Editor ke **Triggers** ($\text{\textlambda}$) section mein jaakar `generateMonthlyBills` function ko **Time-Driven $\rightarrow$ Month Timer** par apni pasand ki tareekh aur waqt par set karein (masalan: Har mahine ki 2 tareekh).📊 Data StructureScript data uthane ke liye Spreadsheet mein maujood har customer sheet mein in cells par nirbhar (depend) karta hai:CellMaaloomaat (Information)H53Grand Total (Bill ka aakhri amount).H49Total Milk Amount (Rupees).H51Total Other Charges (Rupees).C49Total Milk Quantity (Liters).🛑 Important Notes
+Authorization: Jab script pehli baar Drive access karti hai, toh Google aapse ijazat (permission) maangta hai.
+
+Data Errors: Agar aapki sheets mein data errors ya khaali cells hain, toh script automatic run ke dauraan un sheets ko skip kar degi.
 
 
