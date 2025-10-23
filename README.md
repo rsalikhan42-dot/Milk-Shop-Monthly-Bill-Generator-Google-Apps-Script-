@@ -1,4 +1,4 @@
-# Milk-Shop-Monthly-Bill-Generator-Google-Apps-Script-
+# Milk-Shop-Monthly-Bill-Generator-Google-Apps-Script
 Yeh script Google Sheets data se automatic PDF bills bana kar Drive mein save karti hai."A fully automated billing utility using Google Apps Script to read detailed customer data from a Spreadsheet and generate professional, time-triggered PDF bills saved securely to a designated Drive folder."# 🥛 Monthly Milk Bill Generator (Google Apps Script)
 
 ---
